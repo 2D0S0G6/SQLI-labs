@@ -1,0 +1,25 @@
+less 1 :
+	==put a parameter id =1,you get password and username
+	==first put id = 1,then 2,3,4,5 ...you will get different username and password
+	==but if u put long,alpha,alpha numerial....u will get some error
+	==if u put id=1' .....' has a value of %27.....you will get  "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax 
+	   to use near''1''LIMIT 0,1' at line 1"
+	==''1''LIMIT 0,1' .....here ''1'' is actually single quotes
+	==     '    1'   'LIMIT 0,1.....make it like it
+	==1\' LIMIT 0,1' when u give 1\
+	==once u close the string...anything u write after it will be considered to be a code and not as data.
+	== use order by 1,2,then 3....when u give 4 u get an error indicating that it has only 3 columns.
+	== use union select 1,2,3 now u get a diff kind of output
+	==put union select 4,5 and check yea it works
+	==to know version....use version()
+	==for database its database()
+less 3:
+	break query by ')
+	
+less 4:
+	break query by ")
+		
+		
+	
+	
+	
